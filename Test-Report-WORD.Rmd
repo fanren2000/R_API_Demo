@@ -1,0 +1,30 @@
+---
+title: Quarterly report
+output: word_document
+params:
+  team: NA
+---
+## Hello World!!!
+`r params$team`
+
+## Hello Loop!!!
+```{r, echo=FALSE, results='asis'}
+for (var in LETTERS[1:6]){
+  # Add some text
+  cat("Variable: **", paste(var), "**",  sep="")  
+  cat("  \n")  
+  cat("More Text")    
+  cat("  \n")  
+  cat("Even more text")  
+  cat("  \n")
+
+  # Create plots.....
+
+  # insert page break
+  cat("\n")
+  cat("#####\n")
+  cat("\n")
+
+
+}
+```
